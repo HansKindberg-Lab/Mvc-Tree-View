@@ -1,0 +1,7 @@
+﻿@{ ViewBag.Title = "Home"; }
+@model MvcApplication.Models.ViewModels.HomeViewModel
+@section MainContent
+{
+	<p>Text from the start-page.</p>
+	@Html.Partial("~/Views/Shared/Navigation.cshtml", Model.Navigation, new ViewDataDictionary())
+}
